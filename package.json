@@ -2,11 +2,18 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
+    },
+    "scripts": {
+      "prepare": "husky install"
     }
   },
   "lint-staged": {
-    "*.{ts,js}": [
-      "git add"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,less,sass,scss}": [
+      "stylelint --fix"
     ]
   },
   "devDependencies": {
