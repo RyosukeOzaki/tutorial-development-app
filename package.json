@@ -8,13 +8,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{css,less,sass,scss}": [
-      "stylelint --fix"
-    ]
+    "*.{js,ts}": "eslint --cache --fix",
+    "*.{css,scss}": "stylelint --fix",
+    "*.{js,ts,css,md}": "prettier --write"
   },
   "devDependencies": {
     "husky": "^7.0.4",
