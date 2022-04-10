@@ -5,8 +5,20 @@ body{
     align-items: center;
 }
 
-.colorBtn{
-    padding: 0.2rem 0.5rem;
+.container{
+    text-align: center;
+}
+
+.hexColor{
+    text-align: capitalize;
+}
+
+.hex{
+font-size: 3rem;
+}
+
+.hexBtn{
+    padding: 0.25rem 0.5rem;
     border: 5px solid  #fefefe;
     border-radius: 7px ;
     color: #fefefe;
@@ -17,6 +29,6 @@ body{
     outline: none;
 }
 
-.colorBtn:hover{
+.hexBtn:hover{
     background: rgb(0,0,0);
 }
